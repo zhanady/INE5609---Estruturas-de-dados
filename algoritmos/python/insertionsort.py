@@ -6,7 +6,7 @@ num = [42, 15, 73, -5, 0, 99, 18, 67, 23, 42,
 
 for i in range(1, len(num)):
     j = i 
-    while j < len(num) and num[j] < num[j-1] and j>0:
+    while j > 0 and num[j] < num[j-1]:
         temp = num[j-1]
         num[j-1] = num[j]
         num[j] = temp
